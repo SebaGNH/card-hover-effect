@@ -19,7 +19,7 @@ main
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    margin: 20px
+    margin: 20px    
     .card
         position: relative
         //background-color: #fff
@@ -35,6 +35,8 @@ main
                 left: -75px
                 top: calc( 50% - 75px )
                 transition: .5s ease-in-out
+                img
+                    max-width: 75px
 
         .img-box
             position: absolute
@@ -57,11 +59,35 @@ main
                 width: 100%
                 height: 100%
                 text-align: center
-                font-size: 6em
-                background: rgba(#FFFFFF, .5)
+                font-size: 5em
+                background: rgba(#FFFFFF, .3)
                 font-weight: 700
             img
                 width: 100px
                 transition: .5s ease-in-out
+        .content
+            position: absolute
+            right: 0
+            width: calc( 100% - 75px )
+            height: 100%
+            padding: 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+            h3
+                margin-bottom: 5px
+                font-size: 24px
+            a
+                display: inline-block
+                margin-top: 10px
+                padding: 5px 10px
+                text-decoration: none
+                background-color: #333
+                color: #fff
+                border-radius: 5px
 
-
+@media screen and ( max-width:  992px)
+    main
+        width: 100%
+    
