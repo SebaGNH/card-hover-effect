@@ -67,7 +67,7 @@ main .card .img-box::before {
   background: rgba(255, 255, 255, 0.3);
   font-weight: 700;
 }
-main .card .img-box img {
+main .card .img-box imgff {
   width: 100px;
   transition: 0.5s ease-in-out;
 }
